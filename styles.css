@@ -24,17 +24,18 @@ h2 {
   opacity: .5;
   text-align: center;
 }
+
 .container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 60px;
-  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  justify-items: center;
 }
 
 .box {
-  height: 175px;
-  width: 180px;
+  text-align: center; 
 }
 
 button {
@@ -42,12 +43,11 @@ button {
   color: white;
   border-radius: 7px;
   border: none;
+  width: 110px;
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
-  position: absolute;
-  bottom: 100px;
-  left: 50%;
+  grid-column: span 4;  
+  justify-items: center;
 }
-
