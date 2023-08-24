@@ -22,16 +22,26 @@ h2 {
 
 .description {
   opacity: .5;
-  text-align: center;
+  /* text-align: center; */
+}
+.container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
 }
 
 .box {
-  display: inline-block;
   height: 300px;
   width: 250px;
   text-align: center; 
   margin-left: 10px;
   margin-right: 10px;
+  /* align-items: auto; */
+}
+
+.container,button {
+  display: flex;
+  justify-content: center;
 }
 
 button {
@@ -44,6 +54,4 @@ button {
   padding-right: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
-  display: block;
-  margin: auto;
 }
